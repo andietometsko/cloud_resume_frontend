@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Resume</title>
-    <script src="js/visitor-counter.js"></script>
-    <script>
-        visitorCounter();
-    </script>
-    Visitor #: <span id="visitor-counter"></span>
+    <title>Andie Tometsko - Resume</title>
     <style>
-        /* Basic styling for the entire document */
+        /* Clean, professional styling */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -20,96 +15,204 @@
             padding: 20px;
         }
 
-        /* Styling for the header section */
+        /* Visitor counter styling */
+        .visitor-counter {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Header styling with contact info */
         header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         h1 {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            color: #2c3e50;
         }
 
-        /* Styling for section headers */
+        /* Section headers */
         h2 {
-            border-bottom: 2px solid #333;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
             padding-bottom: 5px;
             margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 1.2em;
         }
 
-        /* Styling for job entries and education items */
-        .job, .education-item {
-            margin-bottom: 15px;
+        /* Experience and education entries */
+        .entry {
+            margin-bottom: 20px;
         }
 
-        .job h3, .education-item h3 {
+        .entry h3 {
+            margin-bottom: 5px;
+            color: #34495e;
+        }
+
+        .entry .location {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        /* List styling */
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
             margin-bottom: 5px;
         }
 
-        /* Styling for the skills section */
-        .skills {
+        /* Skills section */
+        .skills-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        .skill {
-            background-color: #f0f0f0;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
+        .skills-group {
+            margin-bottom: 10px;
+        }
+
+        .skills-group h3 {
+            margin-bottom: 5px;
+            color: #34495e;
         }
     </style>
+    <!-- Add visitor counter script -->
+    <script src="js/visitor-counter.js"></script>
 </head>
 <body>
+    <!-- Visitor counter display -->
+    <div class="visitor-counter">
+        Visitor #: <span id="visitor-counter"></span>
+        <script>
+            visitorCounter();
+        </script>
+    </div>
+
+    <!-- Header section with contact information -->
     <header>
-        <!-- Replace "Your Name" with your actual name -->
-        <h1>Your Name</h1>
-        <!-- Update the following lines with your personal information -->
-        <p>Email: your.email@example.com | Phone: (123) 456-7890</p>
-        <p>City, State | LinkedIn: linkedin.com/in/yourprofile</p>
+        <h1>Andie Tometsko</h1>
+        <p>Los Angeles, CA 90045</p>
     </header>
 
-    <section>
-        <h2>Summary</h2>
-        <!-- Replace this paragraph with a brief summary of your professional background and goals -->
-        <p>Experienced professional with a strong background in [Your Field]. Skilled in [Key Skill 1], [Key Skill 2], and [Key Skill 3]. Seeking to leverage my expertise in a challenging role as a [Target Position].</p>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-        <!-- Copy and paste the job div to add more work experiences -->
-        <div class="job">
-            <h3>Job Title - Company Name</h3>
-            <p>Start Date - End Date</p>
-            <ul>
-                <li>Key responsibility or achievement</li>
-                <li>Another important task or accomplishment</li>
-                <li>One more significant contribution</li>
-            </ul>
-        </div>
-        <!-- Add more job divs here as needed -->
-    </section>
-
+    <!-- Education section -->
     <section>
         <h2>Education</h2>
-        <!-- Copy and paste the education-item div to add more educational qualifications -->
-        <div class="education-item">
-            <h3>Degree Name - Major</h3>
-            <p>University Name, Graduation Year</p>
-            <p>Additional information (e.g., GPA, honors, relevant coursework)</p>
+        <div class="entry">
+            <h3>Loyola Marymount University</h3>
+            <div class="location">
+                <span>Los Angeles, CA</span>
+                <span>August 2021-Present</span>
+            </div>
+            <p>Information System Business Analytics Major</p>
         </div>
-        <!-- Add more education-item divs here as needed -->
+        
+        <div class="entry">
+            <h3>Anargyreous & Korgialeneious School of Spetses</h3>
+            <div class="location">
+                <span>Spetses, Greece</span>
+                <span>May 2023-June 2023</span>
+            </div>
+            <p>LMU Study Abroad Program</p>
+        </div>
     </section>
 
+    <!-- Experience section -->
     <section>
-        <h2>Skills</h2>
-        <!-- Update the skills list with your own skills -->
-        <div class="skills">
-            <span class="skill">Skill 1</span>
-            <span class="skill">Skill 2</span>
-            <span class="skill">Skill 3</span>
-            <span class="skill">Skill 4</span>
-            <span class="skill">Skill 5</span>
+        <h2>Experience</h2>
+        <div class="entry">
+            <h3>Student Assistant</h3>
+            <div class="location">
+                <span>Loyola Marymount University, Community of Care</span>
+                <span>August 2022-Present</span>
+            </div>
+            <ul>
+                <li>Organize events, workshops, and awareness campaigns focused on students well being</li>
+                <li>Identify early signs of distress in students who seek our services</li>
+                <li>Determine the best course of action to support and assist students in sensitive and/or crisis situations</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h3>Fulfillment Associate</h3>
+            <div class="location">
+                <span>Sound Business Forms</span>
+                <span>June 2019-Present</span>
+            </div>
+            <ul>
+                <li>Execute and analyze fulfillment projects for a credit union</li>
+                <li>Conduct inventory audits, organize print collateral, and coordinate warehouse organization improvements</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Volunteer Work section -->
+    <section>
+        <h2>Volunteer Work</h2>
+        <div class="entry">
+            <h3>VP of Finance</h3>
+            <div class="location">
+                <span>Delta Gamma Fraternity</span>
+                <span>January 2024-Present</span>
+            </div>
+            <ul>
+                <li>Oversee the fraternity's budget, expense management, and financial tracking of over $100,000 using Greekbill</li>
+                <li>Serve as the primary liaison between the fraternity and executive offices with financial communications</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h3>Guide Dog Raiser</h3>
+            <div class="location">
+                <span>Guide Dogs for the Blind</span>
+                <span>January 2016-May 2021</span>
+            </div>
+            <ul>
+                <li>Raised two guide dogs, currently partnered with visually impaired individuals</li>
+                <li>Completed rigorous evaluations demonstrating the dogs training and socialization progress</li>
+                <li>Assumed a mentorship role, taught new volunteers about proper handling of the dogs</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h3>Social Media Director</h3>
+            <div class="location">
+                <span>Zoe Jelinek Memorial Foundation</span>
+                <span>February 2022-Present</span>
+            </div>
+            <ul>
+                <li>Coordinate all social communications of ZJMF through the website, Facebook and Instagram accounts</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications and Skills section -->
+    <section>
+        <h2>Certifications and Skills</h2>
+        <div class="skills-container">
+            <div class="skills-group">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Microsoft Office Specialist: Excel Associate</li>
+                    <li>LMU Real Estate Certificate Program</li>
+                </ul>
+            </div>
+            <div class="skills-group">
+                <h3>Skills</h3>
+                <ul>
+                    <li>MySQL, Python, Microsoft Access, Jupyter Notebook</li>
+                </ul>
+            </div>
         </div>
     </section>
 </body>
